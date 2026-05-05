@@ -10,11 +10,14 @@ import Footer from './components/Footer'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 function App() {
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
     const saved = localStorage.getItem('abbatech-theme')
-    if (saved === 'dark') {
+    if (saved === 'light') {
+      document.documentElement.classList.remove('dark')
+      setIsDark(false)
+    } else {
       document.documentElement.classList.add('dark')
       setIsDark(true)
     }

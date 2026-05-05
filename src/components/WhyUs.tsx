@@ -79,24 +79,10 @@ export default function WhyUs() {
                 <MessageCircle className="w-5 h-5" />
                 Hablemos de tu proyecto
               </a>
-              <a
-                href="#contacto"
-                className="inline-flex items-center justify-center gap-2 glass text-slate-800 dark:text-white font-semibold px-8 py-4 rounded-2xl hover:bg-slate-100 dark:hover:bg-white/8 transition-all text-base"
-              >
-                Ver formulario
-              </a>
+
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-3">
-              {['React', 'Vite', 'Tailwind CSS', 'WhatsApp API'].map((tech) => (
-                <span
-                  key={tech}
-                  className="glass text-slate-600 dark:text-gray-400 text-xs px-3 py-1.5 rounded-full border-slate-200 dark:border-white/8"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+
           </motion.div>
 
           <div className="grid sm:grid-cols-2 gap-4">
