@@ -11,7 +11,7 @@ export default function FloatingWhatsApp() {
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 1.2, type: 'spring', stiffness: 220 }}
+        transition={{ type: 'spring', stiffness: 220 }}
         whileHover={{ scale: 1.12 }}
         whileTap={{ scale: 0.92 }}
         className="relative w-14 h-14 bg-[#25d366] rounded-full flex items-center justify-center shadow-[0_4px_24px_rgba(37,211,102,0.55)] hover:shadow-[0_4px_32px_rgba(37,211,102,0.75)] transition-shadow"
