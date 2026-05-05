@@ -1,16 +1,5 @@
-import { motion, type Variants } from 'framer-motion'
 import { ArrowRight, MessageCircle, Sparkles, Zap } from 'lucide-react'
 import { WHATSAPP_LINK } from '../config'
-
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 28 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] } },
-}
-
-const stagger: Variants = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.12 } },
-}
 
 export default function Hero() {
   return (
@@ -23,42 +12,28 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-36">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-          <motion.div
-            variants={stagger}
-            initial="hidden"
-            animate="show"
-            className="text-center lg:text-left"
-          >
-            <motion.div variants={fadeUp}>
+          <div className="text-center lg:text-left">
+            <div>
               <span className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-violet-600 dark:text-violet-300 font-semibold mb-7">
                 <Sparkles className="w-4 h-4 text-yellow-500 dark:text-yellow-400" />
                 Diseño web de alto impacto
               </span>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              variants={fadeUp}
-              className="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[1.04] mb-6 tracking-tight"
-            >
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[1.04] mb-6 tracking-tight">
               Páginas Web que{' '}
               <span className="text-gradient block sm:inline">
                 Venden 24/7
               </span>
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              variants={fadeUp}
-              className="text-slate-600 dark:text-gray-400 text-lg lg:text-xl max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed"
-            >
+            <p className="text-slate-600 dark:text-gray-400 text-lg lg:text-xl max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
               Diseñamos landing pages modernas, ultra rápidas y con{' '}
               <span className="text-slate-900 dark:text-white font-semibold">WhatsApp integrado</span>{' '}
               para que tus clientes te contacten al instante y tu negocio nunca deje de crecer.
-            </motion.p>
+            </p>
 
-            <motion.div
-              variants={fadeUp}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href={WHATSAPP_LINK}
                 target="_blank"
@@ -69,12 +44,9 @@ export default function Hero() {
                 Cotiza con nosotros
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-            </motion.div>
+            </div>
 
-            <motion.div
-              variants={fadeUp}
-              className="mt-10 flex items-center gap-5 justify-center lg:justify-start"
-            >
+            <div className="mt-10 flex items-center gap-5 justify-center lg:justify-start">
               <div className="flex -space-x-2.5">
                 {['#8b5cf6', '#06b6d4', '#ec4899', '#10b981'].map((color, i) => (
                   <div
@@ -96,15 +68,10 @@ export default function Hero() {
                   <span className="text-slate-900 dark:text-white font-semibold">50+ clientes</span> confían en nosotros
                 </p>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.85, x: 40 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden lg:block"
-          >
+          <div className="hidden lg:block">
             <div className="relative">
               <div className="glass rounded-2xl overflow-hidden glow-purple">
                 <div className="bg-slate-100/80 dark:bg-white/5 border-b border-slate-200/80 dark:border-white/10 px-4 py-3 flex items-center gap-3">
@@ -169,7 +136,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>
