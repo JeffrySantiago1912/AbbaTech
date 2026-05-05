@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import type { LucideIcon } from 'lucide-react'
-import { Github, ExternalLink, ArrowRight, Utensils, Heart, Scale, Dumbbell, ShoppingBag, Building2 } from 'lucide-react'
-import { WHATSAPP_LINK } from '../config'
+import { Github, ExternalLink, Utensils, Heart, Scale, Dumbbell, ShoppingBag, Building2 } from 'lucide-react'
 
 type Project = {
   name: string
