@@ -46,7 +46,7 @@ export default function WhyUs() {
   return (
     <section id="nosotros" className="py-20 lg:py-32 relative overflow-hidden transition-colors duration-300">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/3 dark:via-cyan-950/8 to-transparent pointer-events-none" />
-      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-violet-500/5 dark:bg-violet-700/8 rounded-full blur-[120px] pointer-events-none -translate-y-1/2" />
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-violet-500/5 dark:bg-violet-700/8 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 hidden md:block" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">

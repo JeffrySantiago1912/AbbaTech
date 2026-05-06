@@ -5,9 +5,9 @@ export default function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-grid">
       {/* Gradient orbs — more subtle in light mode */}
-      <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-violet-500/10 dark:bg-violet-700/20 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-400/8 dark:bg-cyan-500/12 rounded-full blur-[110px] pointer-events-none" />
-      <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-pink-500/6 dark:bg-pink-700/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-violet-500/10 dark:bg-violet-700/20 rounded-full blur-[140px] pointer-events-none hidden md:block" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-400/8 dark:bg-cyan-500/12 rounded-full blur-[110px] pointer-events-none hidden md:block" />
+      <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-pink-500/6 dark:bg-pink-700/10 rounded-full blur-[100px] pointer-events-none hidden md:block" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 lg:py-36">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
