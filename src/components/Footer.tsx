@@ -53,6 +53,7 @@ export default function Footer() {
                 { name: 'Inicio', href: '#inicio' },
                 { name: 'Proyectos', href: '#proyectos' },
                 { name: '¿Por qué nosotros?', href: '#nosotros' },
+                { name: 'Contacto', href: '#contacto' },
               ].map((link) => (
                 <li key={link.name}>
                   <a

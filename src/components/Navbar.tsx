@@ -7,6 +7,7 @@ const navLinks = [
   { name: 'Servicios', href: '#servicios' },
   { name: 'Proyectos', href: '#proyectos' },
   { name: '¿Por qué nosotros?', href: '#nosotros' },
+  { name: 'Contacto', href: '#contacto' },
 ] as const
 
 type NavbarProps = {

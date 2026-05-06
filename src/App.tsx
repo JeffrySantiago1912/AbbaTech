@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 const Services = lazy(() => import('./components/Services'))
 const Projects = lazy(() => import('./components/Projects'))
 const WhyUs = lazy(() => import('./components/WhyUs'))
+const Contact = lazy(() => import('./components/Contact'))
 const Footer = lazy(() => import('./components/Footer'))
 const FloatingWhatsApp = lazy(() => import('./components/FloatingWhatsApp'))
 
@@ -68,6 +69,7 @@ function App() {
             <Services />
             <Projects />
             <WhyUs />
+            <Contact />
           </Suspense>
         )}
       </main>
