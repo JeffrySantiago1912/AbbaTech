@@ -5,7 +5,7 @@ export default function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-slate-200/80 dark:border-white/[0.06] bg-slate-50/60 dark:bg-transparent">
+    <footer className="border-t border-slate-200/80 dark:border-white/[0.06] bg-slate-50/60 dark:bg-transparent transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 
@@ -37,7 +37,7 @@ export default function Footer() {
                 <li key={s}>
                   <a
                     href="#servicios"
-                    className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm"
+                    className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm transition-colors"
                   >
                     {s}
                   </a>
@@ -58,7 +58,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm"
+                    className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm transition-colors"
                   >
                     {link.name}
                   </a>
@@ -73,7 +73,7 @@ export default function Footer() {
               <li>
                 <a href={`mailto:${EMAIL}`} className="flex items-start gap-3 group">
                   <Mail className="w-4 h-4 text-violet-500 dark:text-violet-400 mt-0.5 flex-shrink-0" />
-                  <span className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm break-all">
+                  <span className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm transition-colors break-all">
                     {EMAIL}
                   </span>
                 </a>
@@ -81,7 +81,7 @@ export default function Footer() {
               <li>
                 <a href={`tel:${PHONE}`} className="flex items-center gap-3 group">
                   <Phone className="w-4 h-4 text-cyan-500 dark:text-cyan-400 flex-shrink-0" />
-                  <span className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm">
+                  <span className="text-slate-500 hover:text-slate-800 dark:text-gray-500 dark:hover:text-gray-300 text-sm transition-colors">
                     {PHONE}
                   </span>
                 </a>
@@ -94,7 +94,7 @@ export default function Footer() {
                   className="flex items-center gap-3 group"
                 >
                   <MessageCircle className="w-4 h-4 text-green-500 dark:text-green-400 flex-shrink-0" />
-                  <span className="text-slate-500 hover:text-green-600 dark:text-gray-500 dark:hover:text-green-400 text-sm">
+                  <span className="text-slate-500 hover:text-green-600 dark:text-gray-500 dark:hover:text-green-400 text-sm transition-colors">
                     WhatsApp disponible
                   </span>
                 </a>

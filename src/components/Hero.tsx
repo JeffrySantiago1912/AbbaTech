@@ -38,11 +38,11 @@ export default function Hero() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2.5 bg-[#25d366] text-white font-bold px-8 py-4 rounded-2xl text-base shadow-[0_0_30px_rgba(37,211,102,0.3)]"
+                className="group flex items-center justify-center gap-2.5 bg-[#25d366] hover:bg-[#20bd5a] text-white font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 text-base shadow-[0_0_30px_rgba(37,211,102,0.3)] hover:shadow-[0_0_40px_rgba(37,211,102,0.5)]"
               >
                 <MessageCircle className="w-5 h-5" />
                 Cotiza con nosotros
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 
