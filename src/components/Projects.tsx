@@ -9,7 +9,13 @@ type Project = {
   icon: LucideIcon
   gradient: string
   demo: string
+  image?: string
 }
+
+import farmaciaLaHozImg from '../assets/farmacia-lahoz.png'
+import farmaciaMaireniImg from '../assets/farmacia-maireni.png'
+import barberProImg from '../assets/barber-pro.png'
+
 
 const projects: Project[] = [
   {
@@ -20,16 +26,20 @@ const projects: Project[] = [
     icon: Scissors,
     gradient: 'from-slate-700 via-zinc-700 to-neutral-800',
     demo: 'https://jeffrysantiago1912.github.io/Barber-pro/',
+    image: barberProImg,
   },
+
   {
     name: 'Farmacia Maireni',
     category: 'Farmacia',
     description: 'Página informativa de farmacia con enfoque en productos, confianza de marca y acceso rápido al cliente.',
     tags: ['Medicamentos', 'Salud', 'Farmacia'],
     icon: Pill,
-    gradient: 'from-emerald-600 via-teal-600 to-cyan-700',
+    gradient: 'from-blue-900 via-emerald-600 to-rose-500',
     demo: 'https://jeffrysantiago1912.github.io/Farmacia-Maireni/',
+    image: farmaciaMaireniImg,
   },
+
   {
     name: 'Farmacia Ens. La Hoz',
     category: 'Farmacia',
@@ -38,7 +48,9 @@ const projects: Project[] = [
     icon: Pill,
     gradient: 'from-green-600 via-emerald-600 to-teal-700',
     demo: 'https://jeffrysantiago1912.github.io/Farmacia-LaHoz/',
+    image: farmaciaLaHozImg,
   },
+
 ]
 
 export default function Projects() {
@@ -66,9 +78,18 @@ export default function Projects() {
               key={project.name}
               className="glass rounded-2xl overflow-hidden group"
             >
-              <div className={`h-44 bg-gradient-to-br ${project.gradient} flex items-center justify-center relative overflow-hidden`}>
-                <project.icon className="w-16 h-16 text-white/70" />
+              <div className={`h-56 bg-gradient-to-br ${project.gradient} flex items-center justify-center relative overflow-hidden`}>
+                {project.image ? (
+                  <img 
+                    src={project.image} 
+                    alt={project.name} 
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <project.icon className="w-16 h-16 text-white/70" />
+                )}
                 <div className="absolute inset-0 bg-black/20" />
+
                 <div className="absolute top-3 right-3 flex gap-2">
                   <a
                     href={project.demo}

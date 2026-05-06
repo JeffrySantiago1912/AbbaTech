@@ -3,12 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+
   /* ── Light mode (default) ── */
   :root {
     --glass-bg: rgba(255, 255, 255, 0.88);
     --glass-border: rgba(15, 23, 42, 0.10);
     --glass-hover-bg: rgba(255, 255, 255, 0.97);
-    --glass-shadow: 0 1px 4px rgba(15,23,42,0.07), 0 6px 20px rgba(15,23,42,0.05);
+    --glass-shadow: 0 1px 4px rgba(15, 23, 42, 0.07), 0 6px 20px rgba(15, 23, 42, 0.05);
     --grid-line: rgba(15, 23, 42, 0.05);
     --glow-purple: 0 0 50px rgba(124, 58, 237, 0.10);
     --glow-green: 0 0 30px rgba(37, 211, 102, 0.30);
@@ -37,9 +38,13 @@
     --grad-alt: linear-gradient(135deg, #c084fc, #818cf8);
   }
 
-  * { box-sizing: border-box; }
+  * {
+    box-sizing: border-box;
+  }
 
-  html { scroll-behavior: auto; }
+  html {
+    scroll-behavior: auto;
+  }
 
   body {
     margin: 0;
@@ -48,8 +53,14 @@
     background-color: var(--bg-page);
   }
 
-  ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+
   ::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb);
     border-radius: 4px;
@@ -57,6 +68,7 @@
 }
 
 @layer utilities {
+
   /* Both gradients auto-switch: vivid on dark, saturated-dark on light */
   .text-gradient {
     background: var(--grad-main);
@@ -64,12 +76,14 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
   .text-gradient-alt {
     background: var(--grad-alt);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
   /* Cards: white + shadow on light; glass on dark */
   .glass {
     background: var(--glass-bg);
@@ -78,15 +92,19 @@
     border: 1px solid var(--glass-border);
     box-shadow: var(--glass-shadow);
   }
+
   .glass-hover:hover {
     background: var(--glass-hover-bg);
   }
+
   .glow-purple {
     box-shadow: var(--glow-purple);
   }
+
   .glow-green {
     box-shadow: var(--glow-green);
   }
+
   .bg-grid {
     background-image:
       linear-gradient(var(--grid-line) 1px, transparent 1px),
@@ -108,6 +126,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

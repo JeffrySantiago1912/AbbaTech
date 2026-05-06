@@ -70,15 +70,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
               }
             </button>
 
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-cyan-500 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-lg"
-            >
-              Cotizar ahora
-              <ChevronRight className="w-4 h-4" />
-            </a>
+
           </div>
 
           <div className="lg:hidden flex items-center gap-2">
@@ -117,14 +109,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
                 {link.name}
               </a>
             ))}
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold py-3.5 rounded-xl text-sm"
-            >
-              Cotiza con nosotros
-            </a>
+
           </div>
         </div>
       )}

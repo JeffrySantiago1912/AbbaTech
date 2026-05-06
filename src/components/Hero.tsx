@@ -21,9 +21,9 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-slate-900 dark:text-white leading-[1.04] mb-6 tracking-tight">
-              Páginas Web que{' '}
+              Tu Presencia{' '}
               <span className="text-gradient block sm:inline">
-                Venden 24/7
+                Digital es importante
               </span>
             </h1>
 
