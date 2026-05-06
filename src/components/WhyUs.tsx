@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import type { LucideIcon } from 'lucide-react'
 import { CheckCircle2, Zap, MessageCircle, Palette, Code2, Shield } from 'lucide-react'
 import { WHATSAPP_LINK } from '../config'
@@ -44,19 +43,14 @@ const features: Feature[] = [
 
 export default function WhyUs() {
   return (
-    <section id="nosotros" className="py-20 lg:py-32 relative overflow-hidden transition-colors duration-300">
+    <section id="nosotros" className="py-20 lg:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/3 dark:via-cyan-950/8 to-transparent pointer-events-none" />
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-violet-500/5 dark:bg-violet-700/8 rounded-full blur-[120px] pointer-events-none -translate-y-1/2" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-          >
+          <div>
             <span className="text-pink-600 dark:text-pink-400 font-semibold text-sm uppercase tracking-widest mb-4 block">
               ¿Por qué elegirnos?
             </span>
@@ -74,7 +68,7 @@ export default function WhyUs() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold px-8 py-4 rounded-2xl hover:opacity-90 hover:scale-105 transition-all shadow-lg text-base"
+                className="inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold px-8 py-4 rounded-2xl shadow-lg text-base"
               >
                 <MessageCircle className="w-5 h-5" />
                 Hablemos de tu proyecto
@@ -83,23 +77,18 @@ export default function WhyUs() {
             </div>
 
 
-          </motion.div>
+          </div>
 
           <div className="grid sm:grid-cols-2 gap-4">
-            {features.map((feature, i) => (
-              <motion.div
+            {features.map((feature) => (
+              <div
                 key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.09, duration: 0.5 }}
-                whileHover={{ y: -4 }}
-                className="glass rounded-xl p-5 hover:border-slate-300/60 dark:hover:border-white/20 transition-all duration-300"
+                className="glass rounded-xl p-5"
               >
                 <feature.icon className="w-5 h-5 text-violet-500 dark:text-violet-400 mb-3" />
                 <h4 className="text-slate-900 dark:text-white font-semibold text-sm mb-1.5">{feature.title}</h4>
                 <p className="text-slate-500 dark:text-gray-500 text-xs leading-relaxed">{feature.description}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>

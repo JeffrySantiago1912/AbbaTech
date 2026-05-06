@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import type { LucideIcon } from 'lucide-react'
 import { Github, ExternalLink, Utensils, Heart, Scale, Dumbbell, ShoppingBag, Building2 } from 'lucide-react'
 
@@ -78,17 +77,11 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section id="proyectos" className="py-20 lg:py-32 relative transition-colors duration-300">
+    <section id="proyectos" className="py-20 lg:py-32 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-500/3 dark:via-violet-950/5 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <span className="text-cyan-600 dark:text-cyan-400 font-semibold text-sm uppercase tracking-widest mb-4 block">
             Portafolio
           </span>
@@ -99,33 +92,28 @@ export default function Projects() {
           <p className="text-slate-600 dark:text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
             Cada proyecto refleja nuestro compromiso con la calidad y los resultados. ¿Tu negocio es el próximo?
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {projects.map((project, i) => (
-            <motion.div
+          {projects.map((project) => (
+            <div
               key={project.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.09, duration: 0.55 }}
-              whileHover={{ y: -6 }}
-              className="glass rounded-2xl overflow-hidden hover:border-slate-300/60 dark:hover:border-white/20 transition-all duration-300 group"
+              className="glass rounded-2xl overflow-hidden group"
             >
               <div className={`h-44 bg-gradient-to-br ${project.gradient} flex items-center justify-center relative overflow-hidden`}>
                 <project.icon className="w-16 h-16 text-white/70" />
                 <div className="absolute inset-0 bg-black/20" />
-                <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute top-3 right-3 flex gap-2">
                   <a
                     href={project.github}
-                    className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors"
+                    className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center"
                     title="Ver código"
                   >
                     <Github className="w-3.5 h-3.5 text-white" />
                   </a>
                   <a
                     href={project.demo}
-                    className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-black/70 transition-colors"
+                    className="w-8 h-8 bg-black/50 backdrop-blur-sm rounded-full flex items-center justify-center"
                     title="Ver demo"
                   >
                     <ExternalLink className="w-3.5 h-3.5 text-white" />
@@ -152,19 +140,9 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="text-center mt-12"
-        >
-
-        </motion.div>
       </div>
     </section>
   )

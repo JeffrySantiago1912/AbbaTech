@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { Code2, Menu, X, ChevronRight, Sun, Moon } from 'lucide-react'
 import { WHATSAPP_LINK } from '../config'
 
@@ -27,11 +26,8 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
   }, [])
 
   return (
-    <motion.header
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 ${
         scrolled
           ? 'bg-white/85 dark:bg-black/70 backdrop-blur-xl border-b border-slate-200/80 dark:border-white/[0.06]'
           : 'bg-transparent'
@@ -54,7 +50,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-600 hover:text-slate-900 dark:text-gray-400 dark:hover:text-white text-sm font-medium transition-colors duration-200"
+                className="text-slate-600 hover:text-slate-900 dark:text-gray-400 dark:hover:text-white text-sm font-medium"
               >
                 {link.name}
               </a>
@@ -65,7 +61,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
             <button
               type="button"
               onClick={toggleTheme}
-              className="w-9 h-9 rounded-full glass flex items-center justify-center transition-colors hover:scale-105"
+              className="w-9 h-9 rounded-full glass flex items-center justify-center"
               aria-label="Cambiar tema"
             >
               {isDark
@@ -78,7 +74,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-cyan-500 text-white text-sm font-bold px-5 py-2.5 rounded-full hover:opacity-90 transition-all hover:scale-105 shadow-lg"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-violet-600 to-cyan-500 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-lg"
             >
               Cotizar ahora
               <ChevronRight className="w-4 h-4" />
@@ -108,38 +104,30 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
         </div>
       </div>
 
-      <AnimatePresence>
-        {menuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.25 }}
-            className="lg:hidden bg-white/98 dark:bg-black/95 backdrop-blur-xl border-b border-slate-200 dark:border-white/[0.06] overflow-hidden"
-          >
-            <div className="px-4 py-4 flex flex-col gap-1">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-slate-700 hover:text-slate-900 dark:text-gray-300 dark:hover:text-white py-3 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-white/5 transition-all text-sm font-medium"
-                >
-                  {link.name}
-                </a>
-              ))}
+      {menuOpen && (
+        <div className="lg:hidden bg-white/98 dark:bg-black/95 backdrop-blur-xl border-b border-slate-200 dark:border-white/[0.06] overflow-hidden">
+          <div className="px-4 py-4 flex flex-col gap-1">
+            {navLinks.map((link) => (
               <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold py-3.5 rounded-xl text-sm"
+                key={link.name}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-slate-700 hover:text-slate-900 dark:text-gray-300 dark:hover:text-white py-3 px-4 rounded-xl hover:bg-slate-50 dark:hover:bg-white/5 text-sm font-medium"
               >
-                Cotiza con nosotros
+                {link.name}
               </a>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.header>
+            ))}
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold py-3.5 rounded-xl text-sm"
+            >
+              Cotiza con nosotros
+            </a>
+          </div>
+        </div>
+      )}
+    </header>
   )
 }

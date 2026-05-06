@@ -38,7 +38,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen transition-colors duration-300" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+    <div className="min-h-screen" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
       <main>
         <Hero />
