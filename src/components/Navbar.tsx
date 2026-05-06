@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Code2, Menu, X, ChevronRight, Sun, Moon } from 'lucide-react'
-import { WHATSAPP_LINK } from '../config'
+import { Code2, Menu, X, Sun, Moon } from 'lucide-react'
 
 const navLinks = [
   { name: 'Inicio', href: '#inicio' },
