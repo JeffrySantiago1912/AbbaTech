@@ -1,12 +1,10 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Stats from './components/Stats'
 
 const Services = lazy(() => import('./components/Services'))
 const Projects = lazy(() => import('./components/Projects'))
 const WhyUs = lazy(() => import('./components/WhyUs'))
-const Contact = lazy(() => import('./components/Contact'))
 const Footer = lazy(() => import('./components/Footer'))
 const FloatingWhatsApp = lazy(() => import('./components/FloatingWhatsApp'))
 
@@ -61,17 +59,15 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen transition-colors duration-300" style={{ fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif' }}>
+    <div className="min-h-screen" style={{ fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif' }}>
       <Navbar isDark={isDark} toggleTheme={toggleTheme} />
       <main>
         <Hero />
-        <Stats />
         {loadSecondarySections && (
           <Suspense fallback={null}>
             <Services />
             <Projects />
             <WhyUs />
-            <Contact />
           </Suspense>
         )}
       </main>

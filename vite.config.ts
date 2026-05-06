@@ -23,7 +23,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           react: ['react', 'react-dom'],
-          motion: ['framer-motion'],
           icons: ['lucide-react'],
         },
       },

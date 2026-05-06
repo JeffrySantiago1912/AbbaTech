@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import type { LucideIcon } from 'lucide-react'
 import { Layout, MessageCircle, Smartphone, Zap, Search, Headphones } from 'lucide-react'
 
@@ -64,15 +63,9 @@ const services: Service[] = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="py-20 lg:py-32 transition-colors duration-300">
+    <section id="servicios" className="py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <span className="text-violet-600 dark:text-violet-400 font-semibold text-sm uppercase tracking-widest mb-4 block">
             Lo que hacemos
           </span>
@@ -83,25 +76,20 @@ export default function Services() {
           <p className="text-slate-600 dark:text-gray-400 text-lg max-w-2xl mx-auto leading-relaxed">
             Desde el concepto hasta el lanzamiento, entregamos soluciones web completas, rápidas y de alto impacto para tu negocio.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((service, i) => (
-            <motion.div
+          {services.map((service) => (
+            <div
               key={service.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08, duration: 0.55 }}
-              whileHover={{ y: -6 }}
-              className={`glass rounded-2xl p-6 transition-all duration-300 ${service.borderHover} cursor-default`}
+              className={`glass rounded-2xl p-6 ${service.borderHover} cursor-default`}
             >
               <div className={`w-12 h-12 ${service.bgColor} rounded-xl flex items-center justify-center mb-4`}>
                 <service.icon className={`w-6 h-6 ${service.iconColor}`} />
               </div>
               <h3 className="text-slate-900 dark:text-white font-bold text-lg mb-2">{service.title}</h3>
               <p className="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">{service.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
