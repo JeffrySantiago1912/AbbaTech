@@ -30,6 +30,15 @@ const projects: Project[] = [
     gradient: 'from-emerald-600 via-teal-600 to-cyan-700',
     demo: 'https://jeffrysantiago1912.github.io/Farmacia-Maireni/',
   },
+  {
+    name: 'Farmacia Ens. La Hoz',
+    category: 'Farmacia',
+    description: 'Sitio web para farmacia de confianza en La Romana, ofreciendo servicio 24/7 y una amplia gama de productos de salud.',
+    tags: ['Salud', 'Farmacia', '24/7'],
+    icon: Pill,
+    gradient: 'from-green-600 via-emerald-600 to-teal-700',
+    demo: 'https://jeffrysantiago1912.github.io/Farmacia-LaHoz/',
+  },
 ]
 
 export default function Projects() {
