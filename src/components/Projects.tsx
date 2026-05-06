@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { ExternalLink, Scissors, Pill } from 'lucide-react'
+import { ExternalLink, Scissors, Pill, Glasses } from 'lucide-react'
 
 type Project = {
   name: string
@@ -15,6 +15,7 @@ type Project = {
 import farmaciaLaHozImg from '../assets/farmacia-lahoz.png'
 import farmaciaMaireniImg from '../assets/farmacia-maireni.png'
 import barberProImg from '../assets/barber-pro.png'
+import optiluxImg from '../assets/optilux.png'
 
 
 const projects: Project[] = [
@@ -49,6 +50,17 @@ const projects: Project[] = [
     gradient: 'from-green-600 via-emerald-600 to-teal-700',
     demo: 'https://jeffrysantiago1912.github.io/Farmacia-LaHoz/',
     image: farmaciaLaHozImg,
+  },
+
+  {
+    name: 'Optilux',
+    category: 'Optometría',
+    description: 'Servicio de optometría a domicilio que ofrece exámenes de la vista y una selección de monturas premium en la comodidad de tu hogar.',
+    tags: ['Salud Visual', 'Optometría', 'Servicio a Domicilio'],
+    icon: Glasses,
+    gradient: 'from-blue-600 via-sky-500 to-cyan-400',
+    demo: 'https://opti-lux.netlify.app/',
+    image: optiluxImg,
   },
 
 ]
