@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AbbaTech - Diseñamos landing pages modernas con WhatsApp integrado para impulsar tu negocio. Rápidas, atractivas y de alto impacto." />
-    <meta name="keywords" content="landing page, whatsapp, diseño web, páginas web modernas, AbbaTech, República Dominicana" />
-    <meta property="og:title" content="AbbaTech | Landing Pages Modernas con WhatsApp" />
-    <meta property="og:description" content="Transformamos tu visión en realidad digital. Tu presencia digital es importante." />
+    <script>
+      try {
+        if (localStorage.getItem('abbatech-theme') === 'light') {
+          document.documentElement.classList.remove('dark')
+        }
+      } catch (e) {}
+    </script>
+    <meta name="description" content="AbbaTech construye soluciones web, aplicaciones, cloud, automatización y soporte para negocios en República Dominicana y clientes internacionales." />
+    <meta name="keywords" content="soluciones tecnológicas, aplicaciones web, cloud, automatización, soporte, AbbaTech, República Dominicana" />
+    <meta property="og:title" content="AbbaTech | Soluciones tecnológicas" />
+    <meta property="og:description" content="Soluciones web, aplicaciones, cloud, automatización y soporte. Más que una página: sistemas para operar el negocio." />
     <meta property="og:type" content="website" />
     <title>AbbaTech</title>
   </head>

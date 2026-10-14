@@ -112,11 +112,12 @@ export default function Contact() {
                   className="w-full bg-white border border-slate-200 text-slate-900 dark:bg-[#141420] dark:border-white/10 dark:text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-violet-500/60 transition-all appearance-none cursor-pointer"
                 >
                   <option value="">Seleccionar...</option>
-                  <option value="Landing Page Basica">Landing Page Basica</option>
-                  <option value="Landing Page Premium">Landing Page Premium</option>
-                  <option value="Landing + WhatsApp Bot">Landing + WhatsApp Bot</option>
-                  <option value="Rediseno de sitio actual">Rediseno de sitio actual</option>
-                  <option value="Consultoria Web">Consultoria Web</option>
+                  <option value="Solucion web">Solución web</option>
+                  <option value="Aplicacion">Aplicación</option>
+                  <option value="Cloud">Cloud</option>
+                  <option value="Automatizacion">Automatización</option>
+                  <option value="Soporte">Soporte</option>
+                  <option value="Asesoria">Asesoría</option>
                   <option value="Otro">Otro</option>
                 </select>
               </div>

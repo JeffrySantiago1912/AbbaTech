@@ -19,7 +19,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-500 dark:text-gray-500 text-sm leading-relaxed mb-5">
-              Transformamos tu visión en realidad digital. Landing pages modernas con WhatsApp integrado que generan resultados reales.
+              Soluciones web, aplicaciones, cloud, automatización y soporte para negocios que necesitan operar, no solo verse en línea.
             </p>
             <div className="flex gap-2.5" />
           </div>
@@ -28,11 +28,11 @@ export default function Footer() {
             <h4 className="text-slate-900 dark:text-white font-bold text-sm mb-5">Servicios</h4>
             <ul className="space-y-3">
               {[
-                'Landing Pages Modernas',
-                'WhatsApp Integrado',
-                'Diseño Responsivo',
-                'SEO Optimizado',
-                'Soporte Técnico',
+                'Soluciones web',
+                'Aplicaciones',
+                'Cloud',
+                'Automatización',
+                'Soporte',
               ].map((s) => (
                 <li key={s}>
                   <a

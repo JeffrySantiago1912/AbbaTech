@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { ExternalLink, Scissors, Pill, Glasses } from 'lucide-react'
+import { CalendarClock, ExternalLink, Globe, Glasses, Pill } from 'lucide-react'
 
 type Project = {
   name: string
@@ -14,44 +14,18 @@ type Project = {
 
 import farmaciaLaHozImg from '../assets/farmacia-lahoz.png'
 import farmaciaMaireniImg from '../assets/farmacia-maireni.png'
-import barberProImg from '../assets/barber-pro.png'
 import optiluxImg from '../assets/optilux.png'
-
 
 const projects: Project[] = [
   {
-    name: 'Barber Pro',
-    category: 'Barbería',
-    description: 'Sitio para barbería con servicios, presentación visual del negocio y llamado directo a contacto.',
-    tags: ['Peluquería', 'Barbería', 'Servicios'],
-    icon: Scissors,
-    gradient: 'from-slate-700 via-zinc-700 to-neutral-800',
-    demo: 'https://jeffrysantiago1912.github.io/Barber-pro/',
-    image: barberProImg,
+    name: 'RDIntelligence',
+    category: 'Datos abiertos',
+    description: 'Plataforma para consultar clima, sismos, parques y otras lecturas públicas de República Dominicana.',
+    tags: ['Datos', 'Mapas', 'Plataforma'],
+    icon: Globe,
+    gradient: 'from-slate-900 via-emerald-900 to-cyan-900',
+    demo: 'https://rdintelligence.netlify.app/',
   },
-
-  {
-    name: 'Farmacia Maireni',
-    category: 'Farmacia',
-    description: 'Página informativa de farmacia con enfoque en productos, confianza de marca y acceso rápido al cliente.',
-    tags: ['Medicamentos', 'Salud', 'Farmacia'],
-    icon: Pill,
-    gradient: 'from-blue-900 via-emerald-600 to-rose-500',
-    demo: 'https://jeffrysantiago1912.github.io/Farmacia-Maireni/',
-    image: farmaciaMaireniImg,
-  },
-
-  {
-    name: 'Farmacia Ens. La Hoz',
-    category: 'Farmacia',
-    description: 'Sitio web para farmacia de confianza en La Romana, ofreciendo servicio 24/7 y una amplia gama de productos de salud.',
-    tags: ['Salud', 'Farmacia', '24/7'],
-    icon: Pill,
-    gradient: 'from-green-600 via-emerald-600 to-teal-700',
-    demo: 'https://jeffrysantiago1912.github.io/Farmacia-LaHoz/',
-    image: farmaciaLaHozImg,
-  },
-
   {
     name: 'Optilux',
     category: 'Optometría',
@@ -62,7 +36,35 @@ const projects: Project[] = [
     demo: 'https://opti-lux.netlify.app/',
     image: optiluxImg,
   },
-
+  {
+    name: 'BarberOSS',
+    category: 'Gestión',
+    description: 'Aplicación para barberías: citas, clientes, horarios, ingresos y contacto por WhatsApp.',
+    tags: ['App', 'Citas', 'Operación'],
+    icon: CalendarClock,
+    gradient: 'from-slate-700 via-zinc-700 to-neutral-800',
+    demo: 'https://barbeross.netlify.app/',
+  },
+  {
+    name: 'Farmacia Maireni',
+    category: 'Farmacia',
+    description: 'Página informativa de farmacia con enfoque en productos, confianza de marca y acceso rápido al cliente.',
+    tags: ['Medicamentos', 'Salud', 'Farmacia'],
+    icon: Pill,
+    gradient: 'from-blue-900 via-emerald-600 to-rose-500',
+    demo: 'https://farmaciamairenisrl.netlify.app',
+    image: farmaciaMaireniImg,
+  },
+  {
+    name: 'Farmacia Ens. La Hoz',
+    category: 'Farmacia',
+    description: 'Sitio web para farmacia de confianza en La Romana, ofreciendo servicio 24/7 y una amplia gama de productos de salud.',
+    tags: ['Salud', 'Farmacia', '24/7'],
+    icon: Pill,
+    gradient: 'from-green-600 via-emerald-600 to-teal-700',
+    demo: 'https://farmacialahoz.netlify.app',
+    image: farmaciaLaHozImg,
+  },
 ]
 
 export default function Projects() {
