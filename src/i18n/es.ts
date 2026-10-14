@@ -1,0 +1,158 @@
+import type { Dictionary } from './types'
+
+export const es: Dictionary = {
+  metaTitle: 'AbbaTech | Soluciones tecnológicas',
+  metaDescription:
+    'AbbaTech construye soluciones web, aplicaciones, cloud, automatización y soporte para negocios en República Dominicana y clientes internacionales.',
+  topbar: 'Soluciones web, aplicaciones, cloud, automatización y soporte',
+  nav: {
+    home: 'Inicio',
+    services: 'Servicios',
+    about: 'Sobre nosotros',
+    work: 'Casos',
+    contact: 'Contáctanos',
+    cta: 'Contáctanos',
+    open: 'Abrir menú',
+    close: 'Cerrar menú',
+    themeLight: 'Cambiar a modo claro',
+    themeDark: 'Cambiar a modo oscuro',
+    language: 'Idioma',
+  },
+  hero: {
+    titleBefore: 'Tecnología para',
+    titleAccent: 'operar y crecer',
+    titleAfter: 'tu negocio',
+    text: 'Diseñamos soluciones web, aplicaciones, cloud, automatización y soporte. Una página puede ser el inicio. El trabajo sigue hasta el sistema que el equipo usa cada día.',
+    primary: 'Solicitar una conversación',
+    secondary: 'Ver casos',
+    place: 'Santo Domingo · clientes en el país y fuera',
+    panelTitle: 'Qué se puede encargar',
+    panel: [
+      { label: 'Web', text: 'Sitios y productos que explican el negocio y abren el contacto.' },
+      { label: 'Apps', text: 'Herramientas para citas, clientes, reportes y la operación diaria.' },
+      { label: 'Cloud', text: 'Publicación y entornos para que el producto quede en línea.' },
+      { label: 'Automatización', text: 'WhatsApp, datos y tareas que dejan de copiarse a mano.' },
+    ],
+  },
+  services: {
+    eyebrow: 'Servicios',
+    title: 'La base de una presencia digital que también opera',
+    text: 'El sitio es una parte. AbbaTech también construye la aplicación, la nube, la automatización y el soporte para que el negocio no se quede en una página.',
+    items: [
+      { title: 'Soluciones web', text: 'Sitios claros, rápidos y con un camino directo para escribir o llamar.' },
+      { title: 'Aplicaciones', text: 'Sistemas para la operación: citas, clientes, tableros y procesos propios.' },
+      { title: 'Cloud', text: 'Despliegue y entornos para que el producto esté disponible y se pueda seguir.' },
+      { title: 'Automatización', text: 'Integraciones y avisos que conectan WhatsApp, datos y el trabajo interno.' },
+      { title: 'Soporte', text: 'Ajustes, contenido nuevo y acompañamiento después del lanzamiento.' },
+      { title: 'Asesoría', text: 'Una conversación técnica para decidir qué construir primero y qué no hace falta.' },
+    ],
+  },
+  work: {
+    eyebrow: 'Casos',
+    title: 'Proyectos que hablan por sí solos',
+    text: 'Cada enlace abre el producto en vivo.',
+    view: 'Ver en vivo',
+    items: [
+      {
+        id: 'rd',
+        name: 'RDIntelligence',
+        category: 'Datos abiertos',
+        text: 'Plataforma para consultar clima, sismos, parques y otras lecturas públicas de República Dominicana.',
+        tags: ['Datos', 'Mapas', 'Plataforma'],
+      },
+      {
+        id: 'optilux',
+        name: 'Optilux',
+        category: 'Optometría',
+        text: 'Servicio de optometría a domicilio, con exámenes de la vista y una selección de monturas.',
+        tags: ['Salud visual', 'A domicilio'],
+      },
+      {
+        id: 'barber',
+        name: 'BarberOSS',
+        category: 'Gestión',
+        text: 'Aplicación para barberías: citas, clientes, horarios, ingresos y contacto por WhatsApp.',
+        tags: ['App', 'Citas', 'Operación'],
+      },
+      {
+        id: 'maireni',
+        name: 'Farmacia Maireni',
+        category: 'Farmacia',
+        text: 'Sitio de la farmacia con productos, confianza de marca y un camino corto para escribir.',
+        tags: ['Salud', 'Farmacia'],
+      },
+      {
+        id: 'lahoz',
+        name: 'Farmacia Ens. La Hoz',
+        category: 'Farmacia · La Romana',
+        text: 'Sitio para una farmacia con horario extendido y el surtido a la vista.',
+        tags: ['Salud', '24/7'],
+      },
+    ],
+  },
+  about: {
+    eyebrow: 'Sobre nosotros',
+    title: 'Un equipo para el producto, no solo para la página',
+    text: 'AbbaTech trabaja desde Santo Domingo con negocios locales y con equipos que atienden clientes fuera del país. El mismo criterio cubre el diseño, la construcción y lo que pasa después de publicar.',
+    points: [
+      { title: 'Alcance concreto', text: 'Se define qué entra en esta etapa y qué queda para después.' },
+      { title: 'Entrega usable', text: 'El resultado se puede abrir, recorrer y poner en manos del cliente.' },
+      { title: 'Continuidad', text: 'Soporte y la siguiente pieza cuando el negocio la necesita.' },
+    ],
+  },
+  faq: {
+    eyebrow: 'Preguntas',
+    title: 'Preguntas frecuentes',
+    items: [
+      {
+        q: '¿Solo hacen landing pages?',
+        a: 'No. Una página puede ser el primer entregable. También construimos aplicaciones, automatización, despliegue en la nube y soporte.',
+      },
+      {
+        q: '¿Con quién trabajan?',
+        a: 'Con negocios en República Dominicana y con clientes en otros países.',
+      },
+      {
+        q: '¿Cómo empieza un proyecto?',
+        a: 'Con una conversación sobre el negocio, quién lo va a usar y qué tiene que quedar resuelto. Después se acuerda el alcance.',
+      },
+      {
+        q: '¿Hay soporte después de publicar?',
+        a: 'Sí. Correcciones, contenido nuevo y cambios acordados forman parte del acompañamiento.',
+      },
+      {
+        q: '¿Pueden conectar WhatsApp u otras herramientas?',
+        a: 'Sí. El contacto por WhatsApp y las integraciones con datos o herramientas que el negocio ya usa entran en el alcance cuando hacen falta.',
+      },
+      {
+        q: '¿Cómo los contacto?',
+        a: 'Por el formulario, que abre WhatsApp con tu mensaje, o directo al correo y al teléfono de AbbaTech.',
+      },
+    ],
+  },
+  contact: {
+    eyebrow: 'Contacto',
+    title: 'Cuéntanos qué necesita el negocio',
+    text: 'El mensaje abre WhatsApp con lo que escribiste. Respondemos en español o en inglés.',
+    name: 'Nombre',
+    email: 'Correo',
+    phone: 'Teléfono',
+    service: 'Qué necesitas',
+    message: 'Mensaje',
+    choose: 'Elegir…',
+    other: 'Otra cosa',
+    send: 'Enviar por WhatsApp',
+    direct: 'También directo',
+    greeting: 'Hola AbbaTech, quiero conversar un proyecto.',
+    placeholders: {
+      name: 'Tu nombre',
+      email: 'tu@correo.com',
+      phone: '+1 809 000 0000',
+      message: 'El negocio y qué tendría que hacer el producto.',
+    },
+  },
+  footer: {
+    blurb: 'Estudio en Santo Domingo. Web, aplicaciones, cloud, automatización y soporte.',
+    rights: 'Todos los derechos reservados.',
+  },
+}

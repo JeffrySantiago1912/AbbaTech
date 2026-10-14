@@ -1,17 +1,20 @@
 import { MessageCircle } from 'lucide-react'
-import { WHATSAPP_LINK } from '../config'
+import { WHATSAPP_NUMBER } from '../config'
+import { usePreferences } from '../i18n/Preferences'
 
 export default function FloatingWhatsApp() {
+  const { t } = usePreferences()
+  const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.contact.greeting)}`
+
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
-      <a
-        href={WHATSAPP_LINK}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="relative w-14 h-14 bg-[#25d366] rounded-full flex items-center justify-center shadow-[0_4px_24px_rgba(37,211,102,0.55)]"
-      >
-        <MessageCircle className="w-7 h-7 text-white relative z-10" />
-      </a>
-    </div>
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="WhatsApp"
+      className="fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-[#128C7E] text-white shadow-lg"
+    >
+      <MessageCircle className="h-7 w-7" aria-hidden="true" />
+    </a>
   )
 }

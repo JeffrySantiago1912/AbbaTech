@@ -1,0 +1,158 @@
+import type { Dictionary } from './types'
+
+export const en: Dictionary = {
+  metaTitle: 'AbbaTech | Technology for operating businesses',
+  metaDescription:
+    'AbbaTech builds web solutions, applications, cloud, automation and support for businesses in the Dominican Republic and international clients.',
+  topbar: 'Web solutions, applications, cloud, automation and support',
+  nav: {
+    home: 'Home',
+    services: 'Services',
+    about: 'About',
+    work: 'Work',
+    contact: 'Contact',
+    cta: 'Contact us',
+    open: 'Open menu',
+    close: 'Close menu',
+    themeLight: 'Switch to light mode',
+    themeDark: 'Switch to dark mode',
+    language: 'Language',
+  },
+  hero: {
+    titleBefore: 'Technology to',
+    titleAccent: 'operate and grow',
+    titleAfter: 'your business',
+    text: 'We design web solutions, applications, cloud, automation and support. A page can be the start. The work continues into the system the team uses every day.',
+    primary: 'Request a conversation',
+    secondary: 'See the work',
+    place: 'Santo Domingo · clients here and abroad',
+    panelTitle: 'What you can commission',
+    panel: [
+      { label: 'Web', text: 'Sites and products that explain the business and open a way to write.' },
+      { label: 'Apps', text: 'Tools for bookings, clients, reports and daily operations.' },
+      { label: 'Cloud', text: 'Publishing and environments so the product stays online.' },
+      { label: 'Automation', text: 'WhatsApp, data and tasks that stop being copied by hand.' },
+    ],
+  },
+  services: {
+    eyebrow: 'Services',
+    title: 'The base of a digital presence that also operates',
+    text: 'The site is one part. AbbaTech also builds the application, the cloud setup, the automation and the support so the business is not left with only a page.',
+    items: [
+      { title: 'Web solutions', text: 'Clear, fast sites with a direct path to write or call.' },
+      { title: 'Applications', text: 'Systems for the operation: bookings, clients, dashboards and custom flows.' },
+      { title: 'Cloud', text: 'Deployment and environments so the product is available and can be continued.' },
+      { title: 'Automation', text: 'Integrations and notices that connect WhatsApp, data and the work inside.' },
+      { title: 'Support', text: 'Fixes, new content and partnership after launch.' },
+      { title: 'Advisory', text: 'A technical conversation about what to build first, and what is not needed yet.' },
+    ],
+  },
+  work: {
+    eyebrow: 'Work',
+    title: 'Projects that speak for themselves',
+    text: 'Each link opens the live product.',
+    view: 'Open live',
+    items: [
+      {
+        id: 'rd',
+        name: 'RDIntelligence',
+        category: 'Open data',
+        text: 'A platform for weather, earthquakes, parks and other public readings for the Dominican Republic.',
+        tags: ['Data', 'Maps', 'Platform'],
+      },
+      {
+        id: 'optilux',
+        name: 'Optilux',
+        category: 'Optometry',
+        text: 'An at-home optometry service, with eye exams and a selection of frames.',
+        tags: ['Vision', 'At home'],
+      },
+      {
+        id: 'barber',
+        name: 'BarberOSS',
+        category: 'Operations',
+        text: 'An app for barbershops: appointments, clients, schedules, income and WhatsApp contact.',
+        tags: ['App', 'Bookings', 'Operations'],
+      },
+      {
+        id: 'maireni',
+        name: 'Farmacia Maireni',
+        category: 'Pharmacy',
+        text: 'A pharmacy site with products, a clear brand and a short path to write.',
+        tags: ['Health', 'Pharmacy'],
+      },
+      {
+        id: 'lahoz',
+        name: 'Farmacia Ens. La Hoz',
+        category: 'Pharmacy · La Romana',
+        text: 'A site for a pharmacy with extended hours and the product range in view.',
+        tags: ['Health', '24/7'],
+      },
+    ],
+  },
+  about: {
+    eyebrow: 'About',
+    title: 'A team for the product, not only for the page',
+    text: 'AbbaTech works from Santo Domingo with local businesses and with teams serving clients abroad. The same standard covers design, build and what happens after launch.',
+    points: [
+      { title: 'A concrete scope', text: 'What belongs in this stage, and what waits.' },
+      { title: 'A usable delivery', text: 'Something a customer can open, use and share.' },
+      { title: 'Continuity', text: 'Support, and the next piece when the business needs it.' },
+    ],
+  },
+  faq: {
+    eyebrow: 'Questions',
+    title: 'Frequently asked questions',
+    items: [
+      {
+        q: 'Do you only build landing pages?',
+        a: 'No. A page can be the first delivery. We also build applications, automation, cloud deployment and support.',
+      },
+      {
+        q: 'Who do you work with?',
+        a: 'Businesses in the Dominican Republic and clients in other countries.',
+      },
+      {
+        q: 'How does a project start?',
+        a: 'With a conversation about the business, who will use it and what this stage has to solve. Then the scope is agreed.',
+      },
+      {
+        q: 'Is there support after launch?',
+        a: 'Yes. Fixes, new content and agreed changes are part of the partnership.',
+      },
+      {
+        q: 'Can you connect WhatsApp or other tools?',
+        a: 'Yes. WhatsApp contact and integrations with data or tools the business already uses are part of the scope when they are needed.',
+      },
+      {
+        q: 'How do I reach you?',
+        a: 'Through the form, which opens WhatsApp with your message, or directly by email and phone.',
+      },
+    ],
+  },
+  contact: {
+    eyebrow: 'Contact',
+    title: 'Tell us what the business needs',
+    text: 'The message opens WhatsApp with what you wrote. We reply in Spanish or English.',
+    name: 'Name',
+    email: 'Email',
+    phone: 'Phone',
+    service: 'What you need',
+    message: 'Message',
+    choose: 'Choose…',
+    other: 'Something else',
+    send: 'Send on WhatsApp',
+    direct: 'Also direct',
+    greeting: 'Hello AbbaTech, I want to talk about a project.',
+    placeholders: {
+      name: 'Your name',
+      email: 'you@email.com',
+      phone: '+1 809 000 0000',
+      message: 'The business and what the product has to do.',
+    },
+  },
+  footer: {
+    blurb: 'A studio in Santo Domingo. Web, applications, cloud, automation and support.',
+    rights: 'All rights reserved.',
+  },
+}
